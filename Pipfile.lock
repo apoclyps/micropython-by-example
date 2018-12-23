@@ -1,0 +1,70 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "fcc01f111c4a4cf86455632698c484a438c56a6f48c515b6192ea152510dd8d2"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.5"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "adafruit-ampy": {
+            "hashes": [
+                "sha256:46cbb1ebb585c2c01b9d34625dbef618df95c4256a1fc6ac13cb13bbd4a8b6c0",
+                "sha256:cd8d6b831a1c76d712e30e224e3945428f77bb0c6cccbf06239b31aaf4d4e5b7"
+            ],
+            "index": "pypi",
+            "version": "==1.0.7"
+        },
+        "click": {
+            "hashes": [
+                "sha256:2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13",
+                "sha256:5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"
+            ],
+            "version": "==7.0"
+        },
+        "ecdsa": {
+            "hashes": [
+                "sha256:40d002cf360d0e035cf2cb985e1308d41aaa087cbfc135b2dc2d844296ea546c",
+                "sha256:64cf1ee26d1cde3c73c6d7d107f835fed7c6a2904aef9eac223d57ad800c43fa"
+            ],
+            "version": "==0.13"
+        },
+        "esptool": {
+            "hashes": [
+                "sha256:6b3af9e3feb2c479d39a5bf220b2dbe244dcb0dcff1774743dd6b5111b344add"
+            ],
+            "index": "pypi",
+            "version": "==2.5.1"
+        },
+        "pyaes": {
+            "hashes": [
+                "sha256:02c1b1405c38d3c370b085fb952dd8bea3fadcee6411ad99f312cc129c536d8f"
+            ],
+            "version": "==1.6.1"
+        },
+        "pyserial": {
+            "hashes": [
+                "sha256:6e2d401fdee0eab996cf734e67773a0143b932772ca8b42451440cfed942c627",
+                "sha256:e0770fadba80c31013896c7e6ef703f72e7834965954a78e71a3049488d4d7d8"
+            ],
+            "version": "==3.4"
+        },
+        "python-dotenv": {
+            "hashes": [
+                "sha256:a84569d0e00d178bc5b957f7ff208bf49287cbf61857c31c258c4a91f571527b",
+                "sha256:c9b1ddd3cdbe75c7d462cb84674d87130f4b948f090f02c7d7144779afb99ae0"
+            ],
+            "version": "==0.10.1"
+        }
+    },
+    "develop": {}
+}
