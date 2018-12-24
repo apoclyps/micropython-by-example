@@ -63,6 +63,12 @@ List all files within flash storage:
 ampy -d 0.5 -p COM3 ls
 ```
 
+Read the contents of a file from flash storage:
+
+```sh
+ampy -d 0.5 -p COM3 get boot.py
+```
+
 Copy file to flash storage at the root directory:
 
 ```sh
@@ -73,6 +79,16 @@ Remove file from flash storage:
 
 ```sh
 ampy -d 0.5 -p COM3 rm blink.py
+```
+
+### Running a program on device boot
+
+`boot.py` will run as a precursor to `main.py`. Creating a `main.py` will run every time the device is powered on.
+
+```
+touch main.py
+# add contents to main.py
+ampy -d 0.5 -p COM3 put main.py
 ```
 
 ### Maintainer
