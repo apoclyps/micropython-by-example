@@ -45,3 +45,6 @@ genrst/
 
 # NodeMCU Firmware
 esp8266-*
+
+# IDE
+.idea/

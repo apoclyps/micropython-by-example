@@ -3,6 +3,10 @@ Micropython (ESP8622) By Example
 
 > MicroPython is a lean and efficient implementation of the Python 3 programming language that includes a small subset of the Python standard library and is optimised to run on microcontrollers and in constrained environments.
 
+<p align="center">
+  <img width="308" height="260" src="images/nodemcu_pins.png">
+</p>
+
 ### Prerequisites
 
 - [Python](https://www.python.org/downloads/)
@@ -10,6 +14,7 @@ Micropython (ESP8622) By Example
 - [nodemcu-firmware](https://github.com/nodemcu/nodemcu-firmware/releases)
 - [Micropython 1.9.4](https://micropython.org/download#esp8266)
 - [Putty](https://www.putty.org/)
+- [uPyCraft](https://dfrobot.gitbooks.io/upycraft/content/)
 
 ### Install Drivers and Identify COM port
 
@@ -90,6 +95,14 @@ touch main.py
 # add contents to main.py
 ampy -d 0.5 -p COM3 put main.py
 ```
+
+### Development
+
+Select your favorite IDE or editor for Python and develop your project. Once you are ready to run the code on a ESP8266, you can use uPyCraft to easily copy across the files to the device and open a REPL.
+
+<p align="center">
+  <img width="450" height="300" src="images/upycraft.png">
+</p>
 
 ### Maintainer
 
