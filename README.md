@@ -104,6 +104,11 @@ Select your favorite IDE or editor for Python and develop your project. Once you
   <img width="450" height="300" src="images/upycraft.png">
 </p>
 
+### Resources
+
+- [DHT (Digital Humidity & Temperature) sensors](https://docs.micropython.org/en/latest/esp8266/tutorial/dht.html)
+- [Networking (Wi-Fi)](https://docs.micropython.org/en/latest/esp8266/quickref.html#networking)
+
 ### Maintainer
 
 If you want to contact me, check out my twitter account, find me on #apoclyps.
