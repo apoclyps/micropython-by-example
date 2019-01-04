@@ -22,10 +22,11 @@ def main():
             gpio.toggle_leds()
             temperature, humidity = gpio.read_sensor()
 
-            print('Temp: {0:.2f}, Humidity {1:.2f}'.format(temperature, humidity))
+            print("Temp: {0:.2f}, Humidity {1:.2f}".format(temperature, humidity))
 
             http.emit_sensor(url, device_id, device_name, temperature, humidity)
             sleep(60)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

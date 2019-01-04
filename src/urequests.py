@@ -27,6 +27,7 @@ class Response:
 
     def json(self):
         import ujson
+
         return ujson.loads(self.content)
 
 
@@ -40,6 +41,7 @@ def request(method, url, data=None, json=None, headers={}, stream=None, params=N
         port = 80
     elif proto == "https:":
         import ussl
+
         port = 443
     else:
         raise ValueError("Unsupported protocol: " + proto)
@@ -51,13 +53,14 @@ def request(method, url, data=None, json=None, headers={}, stream=None, params=N
     if params:
         path = path + "?"
         for k in params:
-            path = path + '&' + k + '=' + params[k]
+            path = path + "&" + k + "=" + params[k]
 
     ai = usocket.getaddrinfo(host, port)
     addr = ai[0][4]
     s = usocket.socket()
 
     import gc
+
     gc.collect()
 
     s.connect(addr)
@@ -75,6 +78,7 @@ def request(method, url, data=None, json=None, headers={}, stream=None, params=N
     if json is not None:
         assert data is None
         import ujson
+
         data = ujson.dumps(json)
     if data:
         s.write(b"Content-Length: %d\r\n" % len(data))

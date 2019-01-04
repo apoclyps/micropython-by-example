@@ -15,13 +15,16 @@ def toggle_leds():
     led_red.value(1)
     sleep(1)
 
+
 def toggle_leds_on():
     led_blue.value(0)
     led_red.value(0)
 
+
 def toggle_leds_off():
     led_blue.value(1)
     led_red.value(1)
+
 
 def read_sensor():
     sensor.measure()

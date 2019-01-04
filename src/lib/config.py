@@ -24,7 +24,7 @@ def load(config_file=None):
         A dictionary of the configuration settings, the dict with be empty if there is no configuration file
     """
     if not config_file:
-        config_file = 'config/device_config.json'
+        config_file = "config/device_config.json"
     try:
         with open(config_file) as f:
             return json.loads(f.read())
@@ -44,14 +44,14 @@ def save(values, config_file=None):
         The configuration file to load, defaults to 'config/device_config.json'
     """
     if not config_file:
-        config_file = 'config/device_config.json'
+        config_file = "config/device_config.json"
 
     try:
-        os.mkdir('etc')
+        os.mkdir("etc")
     except OSError:
         pass
 
-    with open(config_file, 'wb') as f:
+    with open(config_file, "wb") as f:
         f.write(json.dumps(values))
 
 
@@ -69,7 +69,7 @@ def get(key, config_file=None):
     bytes
         The return value as a bytestream or None if there is no such configuration setting
     """
-    return load(config_file=config_file).get(key, '')
+    return load(config_file=config_file).get(key, "")
 
 
 def set(key, value, config_file=None):
@@ -106,4 +106,4 @@ def list_settings(config_file=None):
     keys = list(settings.keys())
     keys.sort()
     for key in keys:
-        print('%s=%s' % (key, settings[key]))
+        print("%s=%s" % (key, settings[key]))
