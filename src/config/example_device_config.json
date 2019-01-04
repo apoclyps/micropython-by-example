@@ -1,0 +1,7 @@
+{
+   "device_name":"room",
+   "device_id":"e3f806e0-a20d-42bf-ab25-4b21eaf472da",
+   "ssid":"super-secret-wifi",
+   "password":"super-secret-password",
+   "url": "http://localhost:8000/sensors/"
+}

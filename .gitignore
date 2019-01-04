@@ -48,3 +48,6 @@ esp8266-*
 
 # IDE
 .idea/
+
+# Config
+/src/config/device_config.json

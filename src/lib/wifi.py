@@ -73,11 +73,16 @@ def scan():
     time.sleep(2)
     print('Scanning...')
     nets = wlan.scan()
+    access_points = []
     for net in nets:
-        print(' ' + str(net[0], "utf-8"))
+        access_point = str(net[0], "utf-8")
+        print(' ' + access_point)
+        access_points.append(access_point)
     if not state:
         wlan.active(False)
     esp.osdebug(0)
+
+    return access_points
 
 
 def status():
@@ -93,3 +98,11 @@ def status():
         print('DNS:{0}'.format(dns))
     ma = ":".join(map(lambda x: "%02x" % x, sta.config('mac')))
     print('MAC:{0}'.format(ma))
+
+    return {
+        "ap_active": ap.active(),
+        "sta_active": sta.active(),
+        "ip": address,
+        "gateway": gateway,
+        "dns": dns,
+    }
