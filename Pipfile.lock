@@ -40,10 +40,10 @@
         },
         "esptool": {
             "hashes": [
-                "sha256:6b3af9e3feb2c479d39a5bf220b2dbe244dcb0dcff1774743dd6b5111b344add"
+                "sha256:6e2e549df0c21b5115030bd0623cce52646d30e4e3868a0cd715f9839b1fa16d"
             ],
             "index": "pypi",
-            "version": "==2.5.1"
+            "version": "==2.6"
         },
         "pyaes": {
             "hashes": [
